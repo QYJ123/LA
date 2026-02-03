@@ -1,40 +1,5 @@
-# OBBDetection
+# LA OBBDetection
 
-**note**: If you have questions or good suggestions, feel free to propose issues and contact me.
-
-## introduction
-
-OBBDetection is an oriented object detection toolbox modified from [MMdetection v2.2](https://github.com/open-mmlab/mmdetection).
-
-![demo image](demo/obbdet_show.jpg)
-
-### Major features
-
-- **MMdetection feature inheritance**
-
-  OBBDetection doesn't change the structure and codes of original MMdetection and the additive codes are under MMdetection logic. Therefore, our OBBDetection inherits all features from MMdetection.
-
-- **Support of multiple frameworks out of box**
-
-  We implement multiple oriented object detectors in this toolbox (*e.g.* RoI Transformer, Gliding Vertex). Attributing to moudlar design of MMdetection, Many parts of detectors (*e.g.* backbone, RPN, sampler and assigner) have multiple options.
-
-- **Flexible representation of oriented boxes**
-
-  Horizontal bounding boxes (HBB), oriented bounding boxes (OBB) and 4 point boxes (POLY) are supported in this toolbox. The program will confirm the type of bounding box by the tensor shape or the default setting.
-
-We develop [BboxToolkit](https://github.com/jbwang1997/BboxToolkit) to support oriented bounding boxes operations, which is heavily depended on by this toolbox.
-
-## License
-
-This project is released under the [Apache 2.0 license](LICENSE).
-
-## Update
-
-- (**2021-09-18**) Implement [Double Head OBB](configs/obb/double_heads_obb) in the OBBDetection.
-- (**2021-09-01**) Implement [FCOS OBB](configs/obb/fcos_obb) in the OBBDetection.
-- (**2021-08-21**) Reimplement the [PolyIoULoss](configs/obb/poly_iou_loss).
-
-## Benchmark and model zoo
 
 Results and models are available in the [model zoo](docs/model_zoo.md).
 
